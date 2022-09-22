@@ -1,0 +1,774 @@
+@media only screen and (min-width: 1200px) {
+.App{
+  width: 1200px;
+  margin: 0 auto;
+}
+.header{
+  display: grid;
+  grid-template-columns: 25% 70% 5%;
+  height: 150px;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(252, 251, 238);
+  margin: 0 -100rem;
+  /* add back negative margin value */
+  padding: 0 100rem;
+  box-shadow: 0px 3px 8px -1px rgb(237, 236, 236);
+
+}
+
+img.logo {
+  width: auto;
+  margin-left:10px;
+  height: 100px;
+  /* margin-top: 10px; */
+}
+
+form.filter{
+  display: flex;
+  flex-direction: column;
+}
+.popular {
+  padding-top: 6px;
+  margin-left: 30px;
+  font-size: 24px;
+  font-weight: 600;
+  color:#002856;
+}
+.filter-container {
+  display: flex;
+  flex-direction: row;
+  align-items:center;
+  justify-content: center;
+  
+}
+select{
+  margin: 5px 15px 5px 0px;
+  padding: 1.25rem 0rem 1.25rem .2rem;
+  width: 250px;
+  cursor: pointer;
+  border: #002856;
+  color:#002856;
+  font-size: 16px;
+  border-style: solid; 
+  border-radius: 5px;
+  background-color: #fff;
+  list-style: none;
+}
+
+.middle-container {
+  margin-right:15px;
+  display: grid;
+  grid-template-columns: 120px 120px 120px 120px;
+  /* justify-content: center; */
+  border-style: solid;
+  border-color:#002856;
+  border-radius: 5px;
+  
+}
+div.middle-container button {
+  color:#002856;
+  padding-top: 4px;
+  font-size: 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+div.middle-container button {
+  border-right: solid;
+  border-color: #002856;
+}
+div.middle-container button:last-child {
+  border-right: none;
+}
+button.filter-submit{
+  background:#002856;
+  color: white;
+  height: 64px;
+  width: 64px;
+  border-radius: 5px;
+  cursor: pointer;
+  
+}
+button.filter-submit i{
+  color:#FBB03B;
+  font-size: 20px;
+  
+}
+button.filter-submit i:hover{
+  animation-name: example;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-out;
+}
+
+@keyframes example {
+  0%   {margin-left:0px;}
+  50%  {margin-left:15px;}
+  100% {margin-left:0px;}
+}
+
+.home {
+  display: grid;
+  height: 650px;
+  grid-template-columns: 25% 75%;
+}
+
+.left-menu {
+  margin-top: 15px;
+  margin-left: 15px;
+}
+.left-menu h1{
+  border-radius: 5px 5px 0px 0px;
+}
+.list ul {
+  padding: 10px;
+  /* padding-left: 50px; */
+  margin: auto;
+  /* text-align: center; */
+  font-size: 20px;
+  border-style: solid;
+  border-width: 2px;
+  border-color: #002856;
+}
+.list ul:last-child {
+  border-radius:0px 0px 5px 5px;;
+}
+h1.topic {
+  background: #002856;
+  color: #FBB03B;
+  margin: 0px;
+  padding: 10px;
+  font-size: 26px;
+  text-align: center;
+}
+
+.middle-menu {
+  margin-top: 14px;
+  display: grid;
+  grid-template-columns: 33% 34% 33%;
+  
+}
+.middle-menu div.middle-menu-post {
+  height: 70%;
+  width: 92%;
+  display: flex;
+  flex-direction: column;
+  justify-self: center;
+  border-style: solid;
+  border-radius: 5px;
+  border-color: #002856;
+  background: #002856;
+  overflow: hidden;
+  /* position: relative; */
+}
+.middle-menu div a{
+  color: #FBB03B;
+  font-size: 30px;
+  text-decoration: none!important;
+  padding-left: 4px;
+}
+.middle-menu div.middle-menu-links {
+  display: grid;
+  grid-template-rows: 50% 50%;
+  height: 150px;
+}
+.middle-menu div.middle-menu-links a h4{
+  margin: 0px;
+}
+
+.middle-menu div.middle-menu-links a p{
+  color:#FBB03B;
+  font-size: 18px;
+  margin-top: 26px;
+  transition-property: margin-left;
+  transition-duration: 1s;
+  /* position: relative; */
+  /* padding-top: 20%; */
+  /* bottom: 15%; */
+}
+.middle-menu div.middle-menu-links a p:hover{
+  margin-left:10px;
+}
+.middle-menu div img{
+  border-radius: 5px 5px 0px 0px;
+  
+}
+form.search {
+  margin-left: 6em;
+  margin-right: 6em;
+}
+form.search input {
+  width: 90%;
+  position: relative;
+}
+form.search button {
+  width: 80px;
+  height: 42px;
+}
+form.search input[type=text] {
+  padding: 6px;
+  padding-left: 16px;
+  border: solid;
+  border-width: 2px;
+  border-radius: 20px;
+  border-color: #002856;
+  font-size: 22px;
+}
+.btn {
+  position: absolute;
+  margin-left: 529px;
+  z-index: 100;
+  border-radius: 0 20px 20px 0;
+  background-color: #002856;
+  color: #FBB03B;
+  font-size: 22px;
+  cursor: pointer;
+}
+.form-holder{ 
+  display: flex;
+}
+.footer{
+  background-color: #002856;
+  margin: 0em -100em;
+  margin-top: 2em;
+  padding: 0em 100em;
+  display: grid;
+  grid-template-columns: 24% 24% 24% 24%;
+  grid-template-rows: 25% 25% 25% 25%;
+}
+.footer div {
+  margin: 10px;
+}
+.footer div p{
+  color:#FBB03B;
+  font-size: 20px;
+  margin: 0px;
+}
+.footer div a{
+  color:white;
+  font-size: 16px;
+}
+.footer div ul{
+  margin: 10px;
+}
+#afscontainer1 {
+  margin-top: 14px;
+  margin-left: 50px;
+  margin-right: 50px;
+}
+#afscontainer1 iframe {
+}
+.TABox {
+  margin: 10px;
+  display: grid;
+  grid-template-columns: 30% 50% 20%;
+  border-style: solid;
+  border-radius: 5px;
+}
+.TA-images img{
+  width: 100%;
+  /* border-radius: 15px 0 0 0; */
+}
+.TA-images{
+  margin:auto;
+  padding: 10px 0px 10px 10px;
+
+}
+.TA-content{
+  padding-left: 10px;
+  align-self: center;
+  padding-bottom: 14px;
+}
+.TA-content p{
+  margin-bottom: 20px;
+}
+.TA-content a {
+  font-size: 20px;
+  padding: 6px 20px 8px 20px;
+  background-color: #002856;
+  color:#FBB03B;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: all 0.2s linear 0s;
+}
+.TA-content a:after {
+  margin-left:10px;
+  content: '»';
+  opacity: 0;  
+  transition: 0.5s;
+}
+
+.TA-content a:hover{
+  padding-right: 32px;
+  padding-left:8px;
+}
+
+.TA-content a:hover:after {
+  opacity: 1;
+  right: 20px;
+}
+.TA-review{
+  padding: 10px;
+  margin-top: -30px;
+  align-self: center;
+  text-align: center;
+}
+.number {
+  font-size: 60px;
+  color:#FBB03B;
+}
+.rating {
+  font-size: 20px;
+  margin-top: 4px;
+  margin-bottom: 8px;
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+
+.rating-horizontal {
+  
+  display: flex;
+  flex-direction: right;
+}
+.rating-horizontal img {
+  margin-top:6px;
+}
+.TABox h3,p,h5{
+  padding: 0px;
+  margin: 0px;
+}
+.TABox p{
+  font-size: 14px;
+}
+.TABox h5{
+  font-size: 18px;
+  margin-top: 4px;
+}
+.TABox h3{
+  font-size: 26px;
+  
+}
+.TABox h3 span{
+  font-size: 16px;
+  
+}
+.middle-container button {
+  display: inline-block;
+  border: none;
+  text-decoration: none;
+  background: #ffffff;
+  color:#002856;
+  font-family: sans-serif;
+  font-size: 1rem;
+  cursor: pointer;
+  text-align: center;
+  transition: box-shadow 250ms ease-in-out, 
+              transform 150ms ease;
+}
+
+.middle-container button:hover,
+.middle-container button:focus {
+  box-shadow: 0 0 12px #002856;
+  z-index: 100;
+  
+}
+
+.middle-container button:focus {
+  box-shadow: 0 0 12px #002856;
+  z-index: 100;
+}
+
+.middle-container button:active {
+  transform: scale(0.99);
+}
+
+}
+
+
+@media only screen and (max-width: 1200px) {
+
+  .left-menu {
+    display: none;
+  } 
+
+  .App{
+    width:auto;
+    margin: 0 auto;
+    /* display: flex;
+    flex-direction: column; */
+  }
+  
+  
+  .header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(252, 251, 238);
+    box-shadow: 0px 3px 8px -1px rgb(237, 236, 236);
+    /* margin: 0 -100rem; */
+    /* add back negative margin value */
+    /* padding: 0 100rem; */
+  }
+  
+  .header img.logo{
+    /* width:auto; */
+    height: 100px;
+    margin-top: 15px;
+  }
+  form.search {
+    width: 70%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  .form-holder{ 
+    display: flex;
+    justify-content:center;
+  }
+  form.search input {
+    width: 100%;
+    /* position: relative; */
+  }
+  form.search button {
+    width: 10%;
+    height: 41px;
+  }
+  form.search input[type=text] {
+    padding: 6px;
+    padding-left: 16px;
+    border: solid;
+    border-width: 2px;
+    border-radius: 20px;
+    border-color: #002856;
+    font-size: 22px;
+  }
+  .btn {
+    position: absolute;
+    margin-left:62%;
+    /* margin-left: 529px; */
+    z-index: 100;
+    border-style: none;
+    border-color: #002856;
+    border-radius: 0 20px 20px 0;
+    background-color: #002856;
+    color: #FBB03B;
+    font-size: 22px;
+    cursor: pointer;
+  }
+
+  form.filter{
+    display: flex;
+    flex-direction: column;
+  }
+  .popular {
+    align-self: center;
+    padding-top: 6px;
+    /* margin-left: 30px; */
+    font-size: 24px;
+    font-weight: 600;
+    color:#002856;
+  }
+  .filter-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items:center;
+    justify-content: center;
+    
+  }
+  select{
+    margin: 5px 15px 10px 0px;
+    padding: .75rem 0rem .75rem .2rem;
+    width: 250px;
+    cursor: pointer;
+    border: #002856;
+    color:#002856;
+    font-size: 1rem;
+    border-style: solid; 
+    border-radius: 5px;
+    background-color: #fff;
+    list-style: none;
+  }
+  
+  .middle-container {
+    margin-right:15px;
+    display: grid;
+    grid-template-columns: 120px 120px 120px 120px;
+    /* justify-content: center; */
+    border-style: solid;
+    border-color:#002856;
+    border-radius: 5px;
+    
+  }
+  div.middle-container button {
+    color:#002856;
+    padding-top: 4px;
+    font-size: 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  div.middle-container button {
+    border-right: solid;
+    border-color: #002856;
+  }
+  div.middle-container button:last-child {
+    border-right: none;
+  }
+  button.filter-submit{
+    background:#002856;
+    color: white;
+    height: 64px;
+    width: 64px;
+    border-radius: 5px;
+    cursor: pointer;
+    
+  }
+  button.filter-submit i{
+    color:#FBB03B;
+    font-size: 20px;
+    
+  }
+  button.filter-submit i:hover{
+    animation-name: example;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-out;
+  }
+  
+  @keyframes example {
+    0%   {margin-left:0px;}
+    50%  {margin-left:15px;}
+    100% {margin-left:0px;}
+  }
+
+  .middle-container button {
+    display: inline-block;
+    border: none;
+    text-decoration: none;
+    background: #ffffff;
+    color:#002856;
+    font-family: sans-serif;
+    font-size: 1rem;
+    cursor: pointer;
+    text-align: center;
+    transition: box-shadow 250ms ease-in-out, 
+                transform 150ms ease;
+  }
+  
+  .middle-container button:hover,
+  .middle-container button:focus {
+    box-shadow: 0 0 12px #002856;
+    z-index: 100;
+    
+  }
+  
+  .middle-container button:focus {
+    box-shadow: 0 0 12px #002856;
+    z-index: 100;
+  }
+  
+  .middle-container button:active {
+    transform: scale(0.99);
+  }
+  
+
+  .middle-menu {
+    margin-top: 10px;
+    display: grid;
+    grid-template-columns: 33% 34% 33%;
+    
+  }
+  .middle-menu div.middle-menu-post {
+    height: 100%;
+    width: 92%;
+    display: flex;
+    flex-direction: column;
+    justify-self: center;
+    border-style: solid;
+    border-radius: 5px;
+    border-color: #002856;
+    background: #002856;
+    overflow: hidden;
+    /* position: relative; */
+  }
+  
+  .middle-menu div a{
+    color: #FBB03B;
+    font-size: 30px;
+    text-decoration: none!important;
+    padding-left: 4px;
+  }
+  .middle-menu div.middle-menu-links {
+    display: grid;
+    grid-template-rows: 50% 50%;
+    height: 150px;
+  }
+  .middle-menu div.middle-menu-links a h4{
+    margin: 0px;
+  }
+  
+  .middle-menu div.middle-menu-links a p{
+    color:#FBB03B;
+    font-size: 18px;
+    margin-top: 26px;
+    margin-bottom: 50px;
+    transition-property: margin-left;
+    transition-duration: 1s;
+    /* position: relative; */
+    /* padding-top: 20%; */
+    /* bottom: 15%; */
+  }
+  .middle-menu div.middle-menu-links a p:hover{
+    margin-left:10px;
+  }
+  .middle-menu div img{
+    border-radius: 15px 15px 0px 0px;
+  }
+  .middle-menu div.middle-menu-links a h4{
+    margin: 0px;
+  }
+
+  .middle-menu div.middle-menu-links a p{
+    color:#FBB03B;
+    font-size: 18px;
+    margin-top: 26px;
+    transition-property: margin-left;
+    transition-duration: 1s;
+    /* position: relative; */
+    /* padding-top: 20%; */
+    /* bottom: 15%; */
+  }
+  .middle-menu div.middle-menu-links a p:hover{
+    margin-left:10px;
+  }
+  .middle-menu div img{
+    border-radius: 5px 5px 0px 0px;
+  }
+
+  .footer{
+    background-color: #002856;
+    margin-top: 2em;
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+  }
+  .footer div {
+    margin: 10px;
+  }
+  div.footer-item {
+    grid-template-rows: 50% 50%;
+    align-self: center;
+  }
+  .footer-item p{
+    color:#FBB03B;
+    font-size: .75rem;
+    margin: 0px;
+  }
+  .footer div a{
+    color: white;
+    font-size: 1rem;
+  }
+  .footer div ul{
+    margin: 10px;
+  }
+  .TABox {
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    border-style: solid;
+    border-radius: 5px;
+  }
+  .TA-images {
+    justify-self:center;
+  }
+  .TA-images div img{
+    height: 100%;
+    width:100%;
+    /* border-radius: 15px 0 0 0; */
+  }
+  .TA-images div{
+    height:100%;
+    padding: 10px 10px 0px 10px;
+  }
+  .TA-content{
+    width:98%;
+    margin-bottom: 10px;
+    padding-left: 10px;
+    align-self:flex-start;
+    padding-bottom: 14px;
+    padding-top: 10px;
+  }
+  .TA-content p{
+    margin-bottom: 20px;
+  }
+  .TA-content a {
+    font-size: 20px;
+    padding: 6px 20px 8px 20px;
+    background-color: #002856;
+    color:#FBB03B;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: all 0.2s linear 0s;
+  }
+  .TA-content a:after {
+    margin-left:10px;
+    content: '»';
+    opacity: 0;  
+    transition: 0.5s;
+  }
+  
+  .TA-content a:hover{
+    padding-right: 32px;
+    padding-left:8px;
+  }
+  
+  .TA-content a:hover:after {
+    opacity: 1;
+    right: 20px;
+  }
+  .TA-review{
+    padding: 10px;
+    margin-top: -30px;
+    align-self: center;
+    text-align: center;
+  }
+  .number {
+    font-size: 60px;
+    color:#FBB03B;
+  }
+  .rating {
+    font-size: 20px;
+    margin-top: 4px;
+    margin-bottom: 8px;
+    display: grid;
+    grid-template-columns: 50% 50%;
+  }
+  
+  .rating-horizontal {
+    
+    display: flex;
+    flex-direction: right;
+  }
+  .rating-horizontal img {
+    margin-top:6px;
+  }
+  .TABox h3,p,h5{
+    padding: 0px;
+    margin: 0px;
+  }
+  .TABox p{
+    font-size: 14px;
+  }
+  .TABox h5{
+    font-size: 18px;
+    margin-top: 4px;
+  }
+  .TABox h3{
+    font-size: 26px;
+    
+  }
+  .TABox h3 span{
+    font-size: 16px;
+    
+  }
+}
